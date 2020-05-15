@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 export default class todopage extends Component {
     state = {
        todo: [
-            {
+        {
             id: 1,
             todo: 'wash cow',
             compleet: false
@@ -36,6 +36,7 @@ export default class todopage extends Component {
         ],
         newTodo: ''
     }
+
     handleChange = (e) => {
         this.setState({ newTodo: e.target.value })
     }
@@ -47,6 +48,10 @@ export default class todopage extends Component {
     handleSubmit = (e) => {
         e.preventDefalt();
     }
+    
+    handleClick = (id) => {
+    }
+
     render() {
         console.log(this.state.newTodo)
         return (
@@ -57,11 +62,12 @@ export default class todopage extends Component {
                     <button>click</button>
                 </form>
                 <ul>
-                    {
-                        this.state.todo.map(task => <li className={task.compleet ? 'complet' : 'incoompleet'} key={Math.random}>
+                {
+                        this.state.todo.map(task => <li onClick={() => this.handleClick(task.id)}
+                            className={this.getClassName(task)} key={JSON.stringify(task)}>
                             {task.todo}
                         </li>)
-                    }
+          }
                 </ul>
             </div>
         )
