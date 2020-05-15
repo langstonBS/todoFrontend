@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div>
+  <form
+    onSubmit={[Function]}
+  >
+    <input
+      onChange={[Function]}
+      value=""
+    />
+    <button>
+      click
+    </button>
+  </form>
+  <ul>
+    <li
+      key="{\\"id\\":1,\\"todo\\":\\"wash cow\\",\\"compleet\\":false}"
+      onClick={[Function]}
+    >
+      wash cow
+    </li>
+    <li
+      key="{\\"id\\":2,\\"todo\\":\\"wash bird\\",\\"compleet\\":false}"
+      onClick={[Function]}
+    >
+      wash bird
+    </li>
+    <li
+      key="{\\"id\\":3,\\"todo\\":\\"wash plane\\",\\"compleet\\":false}"
+      onClick={[Function]}
+    >
+      wash plane
+    </li>
+    <li
+      key="{\\"id\\":4,\\"todo\\":\\"wash fatcst\\",\\"compleet\\":false}"
+      onClick={[Function]}
+    >
+      wash fatcst
+    </li>
+    <li
+      key="{\\"id\\":5,\\"todo\\":\\"wash idk\\",\\"compleet\\":true}"
+      onClick={[Function]}
+    >
+      wash idk
+    </li>
+    <li
+      key="{\\"id\\":6,\\"todo\\":\\"just fucking do somthing\\",\\"compleet\\":false}"
+      onClick={[Function]}
+    >
+      just fucking do somthing
+    </li>
+  </ul>
+</div>
+`;
